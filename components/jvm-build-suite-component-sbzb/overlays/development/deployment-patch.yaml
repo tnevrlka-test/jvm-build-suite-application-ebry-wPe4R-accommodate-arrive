@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: jvm-build-suite-component-sbzb
+  namespace: jvm-build-btmf-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/rh_ee_tnevrlka/test-images@sha256:e0ae4283c18b0a1af700dd4cbd969484eb12a702514df01c5f6b246cc83afd6c
+        name: container-image
+        resources: {}
+status: {}
